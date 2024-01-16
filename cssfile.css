@@ -1,0 +1,525 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: #ff0051d3;
+    width: 100%;
+    display: flex;
+    position:fixed;
+    height: 60px;
+    /* border: 2px solid red; */
+}
+ #my-name{
+    text-shadow: 2px 2px snow;
+    margin-left: 100px;
+    padding-top: 5px;
+    font-size: 45px;
+}
+#header h1{
+    animation-name: Dev;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+@keyframes Dev{
+    from{
+        font-size: 30px;
+    }
+    to{
+        font-size: 45px;
+    }
+
+}
+#my-name:hover{
+    text-shadow: none;
+}
+#my-name span{
+    color: rgb(48, 165, 191);
+
+}
+#header ul{
+    padding-left: 200px;
+    display: flex;
+    justify-content: right;
+    /* margin-left: 230px; */
+}
+#header ul li{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+    margin: 20px;
+}
+#header ul li a{
+    color: rgb(3, 3, 3);
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px;
+    position: relative;
+}
+#header ul li a::after{
+    content: '';
+    width: 0 ;
+    height: 2px;
+    position: absolute;
+    background-color:floralwhite;
+    margin-left: -64px;
+    bottom: -2px;
+    padding-right: -10px;
+    transition: 0.6s;
+}
+#header ul li a:hover:after{
+    width: 70px;
+}
+
+/* ---------------------mane-body----------------- */
+
+#mane-body{
+justify-content: space-around;
+height: 600px;
+display: flex;
+width: 100%;
+}
+#mane-body #div1 {
+text-align: center;
+padding-top: 180px;
+/* border: 3px solid red;  */
+width: 60%;
+}
+#mane-body #div1 p{
+font-size: 25px;
+margin: 5px;
+}
+#mane-body #div1 #divyanshu{
+background-color: white;
+color: black;
+font-size: 60px;
+transition-property: background-color;
+transition-duration: 3s;
+}
+#mane-body #div1 #divyanshu:hover{
+background-color: #7f334bb2;
+}
+#mane-body #div1 h1:hover {
+text-shadow: 2px 3px 4px;
+color: black;
+font-size: 60px;
+}
+span{
+color:#ff004f; 
+}
+#mane-body #div2{
+border-top:10px solid #ff004f;
+justify-content: center;
+text-align: right;
+height: 350px;
+margin-top:170px;
+padding-top: 10px;
+width: 330px;
+border-radius: 50%;
+animation: rotate  4s 1;
+animation-delay: 2s;
+}
+@keyframes rotate{
+100%{
+    rotate: 360deg;
+}
+}
+#mane-body #div2 img {
+padding-top: 7px;
+padding-left: 25px;
+border-radius: 50%;
+width: 340px;
+height: auto;
+padding-right: 50px;
+}
+/* --------------------end-mane-body----------------- */
+
+/* ----------------------------strat-About---------------------------------------- */
+
+#About{
+/* border: 2px solid royalblue; */
+background-color: #ff0051d3;
+height: 500px;
+display: flex;
+justify-content: space-between;
+width: 100%;
+text-align: center;
+padding: 15px;
+}
+#about-div1{
+border-radius: 20px;
+/* border: 5px solid red; */
+width: 30%;
+height: 100%;
+}     
+#About div img{
+border-radius: 20px;
+width:120%;
+height: 100%;
+}
+#about-div2{
+/* border: 5px solid red; */
+padding-top: 30px;
+    width: 100%;
+}
+#about-div2 h1{
+margin-top: 15px;
+font-size: 50px;
+}
+#about-div2 h1{
+color:black;
+}
+#about-div2 p{
+padding-left: 35px;
+line-height: 40px;
+color: #0b0a0a;
+text-shadow:0.5px 0.5px 100px #d5e1339d;
+margin-top: 35px;
+/* text-size-adjust: 44px; */
+font-size: 25px;
+}
+#about-div2 p:hover{
+color: rgba(234, 231, 231, 0.749);
+text-shadow:5px 5px 10px  #0b0a0a;
+
+}
+#about-div2 button{
+background-color: #090909;
+color:floralwhite;
+font-size: 15px;
+margin: 10px;
+margin-top: 30px;
+height: 50px;
+width: 150px;
+transition-property: background-color;
+transition-duration: 3s;
+}
+#about-div2 button:hover{
+color: #090909;
+background-color: aliceblue;
+}
+/* ----------------------------end-About---------------------------------------- */
+
+/* --------------------------------------------skills--------------------------------- */
+#my-skills{
+text-align: center;
+padding: 10px;
+width: 100%;
+height: 40px;
+}
+#my-skills h1{
+text-decoration: underline rgb(2, 12, 14);
+padding: 20px;
+font-size: 40px;
+}
+.skills{  
+  margin-left: 90px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat( 3 , 1fr);
+
+}
+.skills>div{
+border-radius: 10px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+margin-bottom: 20px;
+margin-top: 20px;
+width: 250px;
+height: 250px;
+padding: 10px;
+transition-property: background-color;
+transition-duration: 2s;
+}
+.skills>div:hover{
+background-color: #ff00518e;
+}
+.skills>div>h1{
+padding-top: 10px;
+}
+.skills>div img{
+padding-left: 20px;
+width: 200px;
+height: 150px;
+}
+.skills>div img:hover{
+width: 205px;
+}
+.skills>div h1{
+font-size: 20px;
+text-align: center;
+}
+#target-sklls{
+height: 50px;
+}
+/* -------------------------------------------end-skills--------------------------------- */  
+
+/* -------------------------------------------strat-project--------------------------------- */ 
+#project{
+background-color: #ff0051be;
+width: 100%;
+height: 400px;
+}
+#project h1{
+padding-top: 30px;
+font-size: 40px;
+text-align: center;
+}
+
+.perant{ 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+
+}
+.perant>div{
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(27, 27, 198, 0.137) 0px 7px 29px 0px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 350px;
+    height: 240px;
+    padding: 10px;
+}
+.perant>div:hover{
+    box-shadow: rgba(27, 27, 198, 0.53) 0px 7px 29px 0px;
+}
+.perant>div>h3{
+    text-align: center;
+}
+.perant>div>h2{
+    text-align: center;
+}
+.perant>div>h1{
+    text-align: center;
+    margin-top: 65px;
+}
+.projact-enputy p{  
+    padding-left: 80px;
+    font-size: 30px;
+}
+.projact-enputy p:hover{
+    display: none;
+    padding-left: 80px;
+    font-size: 30px;
+}
+.projact-enputy{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+#project-vdo video{
+    height: 70%;
+    width: 100%;
+}
+#project-vdo button a{
+    
+    color:white;
+    text-decoration: none;
+}
+#project-vdo button{
+    border-radius: 2px;
+    border: 1px solid rgb(247, 246, 246);
+    background-color: #9b4e67d3;
+    width: 90px;
+    padding: 3px;
+   margin-left: 45px;
+    margin-top: 10px;
+}
+#project-vdo button:hover{
+    box-shadow: 3px 2px 10px rgb(247, 246, 246);
+}
+#target-project{
+    height: 50px;
+}
+/* -------------------------------------------end-project--------------------------------- */
+
+
+/* -------------------------------------------strat-contect--------------------------------- */
+#Contect{
+font-size: 30px;
+text-align: center;
+color: #ff004f;
+width: 100;
+height: 70px;
+}
+
+#contect-perent-div div{
+    display: flex;
+
+}
+#contect-perent-div div{
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.836) 0px 7px 29px 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+    margin-left: 470px;
+    padding: 10px;
+}
+#contect-perent-div div:hover{
+    font-size: 50px;
+    margin-left: 445px;
+    width: 395px;
+    color: aliceblue;
+    background-color: #ff0051b2;
+}
+.icon-div img{
+    margin-left: 150px;
+    padding-top: 2px;
+    width: 25px;
+}
+.icon-div img:hover{
+    margin-left: 10px;
+    padding-top: 2px;
+    width: 25px;
+}
+.icon-div a{
+    color: aliceblue;
+    text-decoration: none;
+    padding-top: 7px;
+    padding-left: 45px;
+    position: absolute;
+    font-size: 15px;
+}
+#target-contect{
+    height: 50px;
+}
+/* /* -------------------------------------------end-contect---------------------------------  */
+
+/* ------------------------------strat-rusme------------------------------------------------- */
+
+#resume{
+width: 100%;
+height: 50px;
+
+}
+#resume button{
+border-radius: 10px;
+border: white solid 2px;
+box-shadow: rgba(94, 94, 191, 0.564) 0px 50px 100px -20px, rgba(0, 0, 0, 0.537) 0px 30px 60px -30px, rgba(10, 37, 64, 0.783) 0px -2px 6px 0px inset;
+background-color:  #ff0051b2;
+color: #0b0a0a;
+font-size:medium;
+margin: 15px;
+height: 40px;
+width: 30%;
+}
+#resume button:hover{
+text-transform:inherit;
+}
+/* Styles for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+#header{
+    width: 100%;
+    display: flex;
+    position:fixed;
+    height: 60px;
+    }
+    #header ul{
+    display: flex;
+    justify-content: end;
+   padding-left: 60px;
+}
+#mane-body{
+    width: 768px;
+}
+#mane-body #div1 {
+text-align: center;
+padding-top: 180px;
+width: 600px;
+}
+  
+#mane-body #div2{
+position: absolute;
+}
+
+#mane-body #div2 img {
+padding-top: 7px;
+padding-left: 25px;
+border-radius: 50%;
+width: 340px;
+height: auto;
+padding-right: 50px;
+}
+
+#About{
+height: 530px;
+ width:1150px; 
+text-align: center;
+}
+#about-div1{
+ width: 37%;
+} 
+#About div img{
+border-radius: 10px;
+} 
+#about-div2{
+ padding-top: 30px;
+ width: 50%;
+} 
+
+#my-skills{
+padding: 10px;
+width:768px;
+height: 40px;
+}
+#my-skills h1{
+text-align: center;
+text-decoration: underline rgb(2, 12, 14);
+padding: 20px;
+padding-left: 400px;
+font-size: 50px;
+}
+.skills{  
+  margin-left: 75px;
+  display: grid;
+  grid-template-columns: repeat( 3 , 1fr);
+  gap: 70px;
+}  
+
+#project{
+width: 1150px;
+}
+
+#perant{
+width: 250px;
+}
+
+.projact-enputy{
+width: 100px;
+}
+
+#Contect{
+padding-left: 500px;
+width: 768px;
+}
+
+#contect-perent-div{
+width: 768px;
+}
+#contect-perent-div .icon-div{
+padding-left: 80px;
+height: 60px;
+margin-left: 400px;
+width: 500px;
+}
+#resume{
+margin-left: 270px;
+width: 768px;
+}
+#resume button{
+width: 210px;
+}
+
+
+
+}

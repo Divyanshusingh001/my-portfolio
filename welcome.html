@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .welcome-container {
+            overflow: hidden;
+            height: 400px;
+            width: 90%;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px  #ff0051;
+            opacity: 0;
+            transform: scale(2);
+            animation: fadeInScale 1s ease-out forwards;
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            text-shadow: 1px 1px 1px #ff0051, 
+            3px 3px 5px blue; 
+            color: #ff0051;
+            font-size: 70px;
+            padding-top: 50px;
+            color: #333;
+        }
+
+        p {
+            overflow: hidden;
+            line-height: 30px;
+            color: #666;
+        }
+
+        @media screen and (max-width: 768px) {
+                    h1{
+                        font-size: 30px;
+                    }
+            
+        }
+    </style>
+</head>
+<body>
+
+<div class="welcome-container">
+    <h1>Welcome to My-portfolio</h1>
+    <p>This is a simple welcome page created with HTML and CSS.</p>
+    <p>"आपका हार्दिक स्वागत है! <br>मेरा पोर्टफोलियो एक संग्रह है जो मेरे कार्य और योग्यताओं को साझा करता है। धन्यवाद कि आपने इसे देखा।"</p>
+    
+</div>
+
+</body>
+</html>
